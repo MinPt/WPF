@@ -1,0 +1,15 @@
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\bin\Debug\WPFLabies.exe.config
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\bin\Debug\WPFLabies.exe
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\bin\Debug\WPFLabies.pdb
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.csprojAssemblyReference.cache
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\MainWindow.g.cs
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\App.g.cs
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies_MarkupCompile.cache
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies_MarkupCompile.lref
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\MainWindow.baml
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.g.resources
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.Properties.Resources.resources
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.csproj.GenerateResource.cache
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.csproj.CoreCompileInputs.cache
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.exe
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.pdb
