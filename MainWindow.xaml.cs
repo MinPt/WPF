@@ -17,25 +17,25 @@ namespace WPFLabies
         }
 
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private void RangeBase_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            var val = ((ListBoxItem) this.MyListBox.SelectedValue).Content.ToString();
-            
-
-            if (this.CheckBox1.IsChecked.Value)
+            if (this.Choose == null)
             {
-                val += " Minailiuk";
+                return;
             }
-            if (this.CheckBox2.IsChecked.Value)
+            switch (this.Choose.SelectedIndex)
             {
-                val += " Petro";
+                case 0:
+                {
+                    this.MyImage1.Width = this.MySlider.Value;
+                }
+                    break;
+                case 1:
+                {
+                    this.MyImage2.Width = this.MySlider.Value;
+                }
+                    break;
             }
-            if (this.CheckBox3.IsChecked.Value)
-            {
-                val += " Sergeevich";
-            }
-
-            MessageBox.Show(val);
         }
     }
 }

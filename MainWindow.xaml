@@ -6,21 +6,18 @@
         xmlns:local="clr-namespace:WPFLabies"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-  <StackPanel>
-      <StackPanel Orientation="Horizontal">
-          <TextBlock>Choose your destiny</TextBlock>
-          <ListBox x:Name="MyListBox" Margin="10">
-              <ListBoxItem>Earth</ListBoxItem>
-              <ListBoxItem>Water</ListBoxItem>
-              <ListBoxItem>Fire</ListBoxItem>
-              <ListBoxItem>Air</ListBoxItem>
-          </ListBox>
-      </StackPanel>
-      <StackPanel >
-          <CheckBox x:Name="CheckBox1">LastName</CheckBox>
-          <CheckBox x:Name="CheckBox2">FirsName</CheckBox>
-          <CheckBox x:Name="CheckBox3" IsChecked="True">ThirdName</CheckBox>
-      </StackPanel>
-      <Button Click="ButtonBase_OnClick">Checkout</Button>
-  </StackPanel>
+    <StackPanel Orientation="Vertical">
+        <WrapPanel Orientation="Horizontal">
+            <Image x:Name="MyImage1" Source="C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\Assets\meme.png" Width="200" Height="200"/>
+            <Image x:Name="MyImage2" Source="C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\Assets\puppy.png" Width="200" Height="200" />
+        </WrapPanel>
+        <StackPanel Orientation="Horizontal">
+            <Slider x:Name="MySlider" ValueChanged="RangeBase_OnValueChanged" Value="100" Minimum="100" Maximum="200" Width="200" Height="30" IsSelectionRangeEnabled="True" />
+            <ComboBox Name="Choose" SelectedIndex="0">
+                <ComboBoxItem>Image1</ComboBoxItem>
+                <ComboBoxItem>Image2</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+    </StackPanel>
+
 </Window>

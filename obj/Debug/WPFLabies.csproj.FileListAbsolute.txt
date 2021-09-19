@@ -13,3 +13,4 @@ C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.csproj.Gene
 C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.csproj.CoreCompileInputs.cache
 C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.exe
 C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.pdb
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies_Content.g.cs
