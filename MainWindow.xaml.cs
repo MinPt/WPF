@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace WPFLabies
 {
@@ -15,19 +16,26 @@ namespace WPFLabies
             InitializeComponent();
         }
 
+
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(this.MyBox.Text, out var num))
+            var val = ((ListBoxItem) this.MyListBox.SelectedValue).Content.ToString();
+            
+
+            if (this.CheckBox1.IsChecked.Value)
             {
-                MessageBox.Show(num.ToString());
+                val += " Minailiuk";
             }
-            else
+            if (this.CheckBox2.IsChecked.Value)
             {
-                MessageBox.Show(this.MyBox.Text.Length.ToString());
-            } ;
-            
-            
-            
+                val += " Petro";
+            }
+            if (this.CheckBox3.IsChecked.Value)
+            {
+                val += " Sergeevich";
+            }
+
+            MessageBox.Show(val);
         }
     }
 }

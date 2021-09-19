@@ -6,13 +6,21 @@
         xmlns:local="clr-namespace:WPFLabies"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <StackPanel>
-        <TextBox Width="100" x:Name="MyBox" >
-            textbox
-        </TextBox>
-        <Button Width="100" Click="ButtonBase_OnClick">
-            Text
-        </Button>
-        
-    </StackPanel>
+  <StackPanel>
+      <StackPanel Orientation="Horizontal">
+          <TextBlock>Choose your destiny</TextBlock>
+          <ListBox x:Name="MyListBox" Margin="10">
+              <ListBoxItem>Earth</ListBoxItem>
+              <ListBoxItem>Water</ListBoxItem>
+              <ListBoxItem>Fire</ListBoxItem>
+              <ListBoxItem>Air</ListBoxItem>
+          </ListBox>
+      </StackPanel>
+      <StackPanel >
+          <CheckBox x:Name="CheckBox1">LastName</CheckBox>
+          <CheckBox x:Name="CheckBox2">FirsName</CheckBox>
+          <CheckBox x:Name="CheckBox3" IsChecked="True">ThirdName</CheckBox>
+      </StackPanel>
+      <Button Click="ButtonBase_OnClick">Checkout</Button>
+  </StackPanel>
 </Window>
