@@ -6,18 +6,11 @@
         xmlns:local="clr-namespace:WPFLabies"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <StackPanel Orientation="Vertical">
-        <WrapPanel Orientation="Horizontal">
-            <Image x:Name="MyImage1" Source="C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\Assets\meme.png" Width="200" Height="200"/>
-            <Image x:Name="MyImage2" Source="C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\Assets\puppy.png" Width="200" Height="200" />
-        </WrapPanel>
-        <StackPanel Orientation="Horizontal">
-            <Slider x:Name="MySlider" ValueChanged="RangeBase_OnValueChanged" Value="100" Minimum="100" Maximum="200" Width="200" Height="30" IsSelectionRangeEnabled="True" />
-            <ComboBox Name="Choose" SelectedIndex="0">
-                <ComboBoxItem>Image1</ComboBoxItem>
-                <ComboBoxItem>Image2</ComboBoxItem>
-            </ComboBox>
-        </StackPanel>
-    </StackPanel>
+    <Canvas >
+        
+        <Calendar x:Name="Calendar1" FirstDayOfWeek="Monday" Canvas.Top="25" Canvas.Left="25" ></Calendar>
+        <TextBox x:Name="UserInput1" Canvas.Left="300" Canvas.Top="25" Margin="5">Here</TextBox>
+        <Button Click="ButtonBase_OnClick" Canvas.Left="300" Width="100" Canvas.Top="100">Checkout</Button>
+    </Canvas>
 
 </Window>

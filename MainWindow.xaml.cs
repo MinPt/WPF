@@ -17,24 +17,13 @@ namespace WPFLabies
         }
 
 
-        private void RangeBase_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+       
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            if (this.Choose == null)
+            if (this.Calendar1.SelectedDate.Value.Date.ToShortDateString() == this.UserInput1.Text)
             {
-                return;
-            }
-            switch (this.Choose.SelectedIndex)
-            {
-                case 0:
-                {
-                    this.MyImage1.Width = this.MySlider.Value;
-                }
-                    break;
-                case 1:
-                {
-                    this.MyImage2.Width = this.MySlider.Value;
-                }
-                    break;
+                MessageBox.Show("GOT IT!!");
             }
         }
     }
