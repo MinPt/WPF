@@ -14,3 +14,4 @@ C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.csproj.Core
 C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.exe
 C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies.pdb
 C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\WPFLabies_Content.g.cs
+C:\Users\petrm\RiderProjects\WPFLabies\WPFLabies\obj\Debug\GeneratedInternalTypeHelper.g.cs
