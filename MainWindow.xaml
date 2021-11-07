@@ -9,28 +9,16 @@
         Title="Lab4" Height="400" Width="525">
 
 
-    <Canvas
-        Loaded="FrameworkElement_OnLoaded">
-
-        <Ellipse
-            MouseDown="UIElement_OnMouseDown"
-
-            Focusable="True"
-            Width="50"
-            Height="50"
-            Stroke="blue"
-            StrokeThickness="25" />
-
-        <TextBox
-            Focusable="True"
-            x:Name="TextBox1"
-            GotFocus="UIElement_OnGotFocus"
-            LostFocus="UIElement_OnLostFocus"
-            Width="400"
-            Height="100"
-            Text="KeyDown"
-            Canvas.Top="100" />
-
-
-    </Canvas>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" MinHeight="50">
+            <MenuItem Header="Commands">
+                <MenuItem Header="Help" Command="Help" x:Name="HelpItem"></MenuItem>
+                <MenuItem Header="Copy" Command="Copy" x:Name="CopyItem"></MenuItem>
+                <MenuItem Header="Past" Command="Paste"  x:Name="PastItem"></MenuItem>
+                <MenuItem Header="Cut (myself)" Command="Cut" x:Name="CutItem"></MenuItem>
+            </MenuItem>
+            
+        </Menu>
+        
+    </DockPanel>
 </Window>
