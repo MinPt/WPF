@@ -7,32 +7,30 @@
         xmlns:model="clr-namespace:WPFLabies.Models"
         mc:Ignorable="d"
         Title="Lab4" Height="400" Width="525">
-    
-    
-        <Grid>
-                <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <TextBlock Text="FirstName" />
-                <TextBox Text="{Binding FirstName, Mode=TwoWay}" Grid.Column="1"  />
-                
-                <TextBlock Grid.Row="1" Text="LastName" />
-                <TextBox Grid.Row="1" Text="{Binding LastName, Mode=TwoWay}" Grid.Column="1"  />
-                
-                <TextBlock Text="Group" Grid.Row="2" />
-                <TextBox Text="{Binding Group, Mode=TwoWay}" Grid.Column="1" Grid.Row="2"  />
-                
-                <TextBlock Text="Course" Grid.Row="3" />
-                <TextBox Text="{Binding Course, Mode=TwoWay}" Grid.Column="1" Grid.Row="3"  />
-                <Button Grid.ColumnSpan="2" Content="Check" Grid.Row="4" Grid.Column="0" Click="ButtonBase_OnClick"/>
-        </Grid>
-    
+
+
+    <Canvas
+        Loaded="FrameworkElement_OnLoaded">
+
+        <Ellipse
+            MouseDown="UIElement_OnMouseDown"
+
+            Focusable="True"
+            Width="50"
+            Height="50"
+            Stroke="blue"
+            StrokeThickness="25" />
+
+        <TextBox
+            Focusable="True"
+            x:Name="TextBox1"
+            GotFocus="UIElement_OnGotFocus"
+            LostFocus="UIElement_OnLostFocus"
+            Width="400"
+            Height="100"
+            Text="KeyDown"
+            Canvas.Top="100" />
+
+
+    </Canvas>
 </Window>

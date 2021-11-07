@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 using WPFLabies.Models;
 
 namespace WPFLabies
@@ -8,26 +9,31 @@ namespace WPFLabies
     /// </summary>
     public partial class MainWindow
     {
-        private readonly Student _student = new Student
+        private void UIElement_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            FirstName = "Petro",
-            LastName = "Minailiuk",
-            Group = 308,
-            Course = 3
-        };
-
-        public Student Student => _student;
-        
-        public MainWindow()
-        {
-            InitializeComponent();
-
-            DataContext = Student;
+            MessageBox.Show("Circle!");
         }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private void UIElement_OnKeyDown(object sender, KeyEventArgs e)
         {
-            MessageBox.Show(Student.ToString());
+            MessageBox.Show($"Key {e.Key} was pressed");
+        }
+
+        private void FrameworkElement_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Element was loaded!");
+            KeyDown += UIElement_OnKeyDown;
+        }
+
+        private void UIElement_OnGotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox1.Focus();
+            MessageBox.Show("Got focus)");
+        }
+
+        private void UIElement_OnLostFocus(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Lost focus(");
         }
     }
 }
