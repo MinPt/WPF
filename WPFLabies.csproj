@@ -64,6 +64,7 @@
         </Compile>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Models\Himan.cs" />
         <Compile Include="Models\Student.cs" />
         <Compile Include="Properties\AssemblyInfo.cs">
             <SubType>Code</SubType>

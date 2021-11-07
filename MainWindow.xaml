@@ -10,15 +10,9 @@
 
 
     <DockPanel>
-        <Menu DockPanel.Dock="Top" MinHeight="50">
-            <MenuItem Header="Commands">
-                <MenuItem Header="Help" Command="Help" x:Name="HelpItem"></MenuItem>
-                <MenuItem Header="Copy" Command="Copy" x:Name="CopyItem"></MenuItem>
-                <MenuItem Header="Past" Command="Paste"  x:Name="PastItem"></MenuItem>
-                <MenuItem Header="Cut (myself)" Command="Cut" x:Name="CutItem"></MenuItem>
-            </MenuItem>
-            
-        </Menu>
+        <TextBlock Text="{Binding Name, Mode=TwoWay}"/>
+        <TextBlock Text="{Binding Surname, Mode=TwoWay}"/>
+        <TextBlock Text="{Binding Age, Mode=TwoWay}"/>
         
     </DockPanel>
 </Window>
